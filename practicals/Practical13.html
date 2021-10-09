@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(180, 177, 177);
+            
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            
+           
+            
+        }
+        .header{
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            
+            margin: 30px;
+            color: red;
+        }
+        .Login,.signUp,.signIn{
+            width: 300px;
+            height: 400px;
+            display:inline-block;
+            background-color: white;
+           margin-left: 30px;
+           
+           
+            
+        }
+       .upper{
+           text-align: center;
+           font-size: 18px;
+           padding: 5px;
+           background-color: chocolate;
+           height: 25%;
+           margin-bottom: 10px;
+          
+       }
+       .upper h2{
+           margin-top: 10px;
+           color: white;
+       }
+       
+       input[type="email"]
+       {
+           outline: none;
+           border: none;
+           border-bottom: 1px solid black;
+           padding: 10px;
+           font-size: 15px;
+           width: 90%;
+           margin: 10px;
+
+       }
+       input[type="password"]
+       {
+           outline: none;
+           border: none;
+           border-bottom: 1px solid black;
+           font-size: 15px;
+           padding: 10px;
+           width: 90%;
+           margin: 10px;
+       }
+       .Login #p1{
+           font-size: 15px;
+           text-align: right;
+           margin-right: 20px;
+       }
+       input[type="submit"]
+       {
+           outline: none;
+           border: none;
+           border-radius: 20px;
+           background-color: grey;
+           color: honeydew;
+           font-size: 15px;
+           padding: 5px 20px ;
+           text-transform: uppercase;
+           margin-top: 50px;
+           margin-left: 15px;
+          
+       }
+       .Login #p2{
+           display: inline-block;
+           font-size: 13px;
+           margin-left: 10px;
+       }
+       
+
+     
+       .top{
+           font-size: large;
+           text-align: center;
+           margin-top: 15px;
+           color: coral;
+           text-transform: uppercase;
+
+       }
+       input[type="checkbox"]
+       {
+           float: left;
+           margin-top: 10px;
+           margin-left: 10px;
+       }
+       #p3{
+           font-size: 11px;
+           margin-top: 10px;
+           float: left;
+           margin-left: 4px;
+       }
+       .signUp input[type="submit"]
+       {
+           
+        outline: none;
+           border: none;
+           border-radius: 15px;
+           background-color:blue;
+           color: honeydew;
+           font-size: 15px;
+           padding: 6px 15px ;
+          
+          
+           text-transform: uppercase;
+       
+           
+
+
+
+       }
+       .sign{
+          
+           
+           
+          margin-top: 60px;
+          margin-bottom: 15px;
+          
+       }
+       .signUp #p4{
+           display: inline-block;
+           font-size: 13px;
+           margin-left: 15px;
+         
+       }
+       .footer2{
+           background-color: brown;
+           
+           height: 84px;
+           
+          justify-content: center;
+          align-items: center;
+           display: flex;
+           
+          
+       }
+       .social{
+           font-size: 30px;
+           
+           color: white;
+       }
+       .social i{
+           padding: 10px;
+       }
+       header{
+           font-size: 15px;
+           text-transform: uppercase;
+           text-align: center;
+           margin-top: 10px;
+           color: steelblue;
+       }
+       #p5{
+           font-size: 13px;
+           margin-right: 20px;
+           text-align: end;
+           color: blueviolet;
+       }
+       .signIn input[type="submit"]
+       {
+           background-color: rgb(17, 147, 199);
+         border-radius: 20px;
+         display: block;
+         width: 90%;
+         padding: 12px 15px;
+         margin: 20px 15px;
+         
+        
+       }
+       .signIn p{
+           text-align: center;
+           font-size: 15px;
+           
+               }
+               .footer3{
+                   display: flex;
+                   justify-content: center;
+                   margin-top: 20px;
+               }
+
+               .social1 i{
+                   font-size: 30px;
+                   border-radius: 30px;
+                   padding: 10px 0px;
+                   text-align: center;
+                   width: 75px;
+                   color: rgb(96, 96, 248);
+                   
+                   box-shadow: 2px 2px 5px skyblue;
+               }
+
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="header"> <h1> Form Template</h1></div>
+    <div class="box">
+    <div class="Login">
+        <div class="upper"><h2>LOGIN</h2>
+            <div class="social">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google"></i>
+              </div>
+        
+        </div>
+        <div>
+        <input type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Your Email"
+        >
+    </div>
+    <div>
+        <input type="password"
+        name="pass"
+        id="pass"
+        placeholder="Enter Your Password">
+
+        </div>
+        <p id="p1"> <b> Forgot Password?</b></p>
+        <input type="submit" value="Login">
+       <p id="p2">Don't have account? <b> Sign Up</b></p>
+
+    </div>
+    <div class="signUp">
+        <div class="top">
+            <h2>SignUP</h2>
+            </div>
+            <div>
+                <input type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email">
+            </div>
+            <div>
+                <input type="password"
+                name="pass"
+                id="pass"
+                placeholder="Enter Password">
+            </div>
+        
+            <input type="checkbox"><p id="p3">Check to accept Terms and Conditions </p>
+            <div class="sign"><input type="submit" value="SINGUP" >
+            <p id="p4">Have an account? <b> Sign In</b></p></div>
+            <div class="footer2">
+                <div class="social">
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-google"></i>
+                </div>
+           </div> 
+           </div>
+
+        <div class="signIn">
+            <header><h1>Sign In</h1></header>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div>
+                <input type="password" name="pass" id="pass" placeholder=" Enter Your Password">
+            </div>
+            <p id="p5">Forgot Password?</p>
+            <input type="submit" value="Sign In">
+           
+               <p> <b> Or sign in with</b></p>
+               <div class="footer3">
+                <div class="social1">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                   <a href=""> <i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-google"></i></a>
+                  </div>
+               </div>
+        </div> 
+    
+</div>
+</body>
+</html>

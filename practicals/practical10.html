@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" i.image="IE=edge">
+    <meta name="viewport" i.image="width=device-width, initial-scale=1.0">
+    <title>Side Nav Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *
+        {
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        
+
+        }
+        .header{
+            background-color: gray;
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0%;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .header img{
+            padding: 5px;
+            margin-right:5px ;
+        }
+        .header h2{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            line-height: 100px;
+            font-size: 40px;
+            color: white;
+        
+        }
+        .image img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            padding: 15px;
+        }
+        .image{
+            width: 100%;
+            padding: 10px;
+        }
+        .image p {
+            text-align: justify;
+            justify-content: center;
+            padding: 5px;
+           
+
+        }
+        .sidenav{
+            width: 20%;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            background-color: darkslategray;
+            left: -100%;
+            margin-top: 100px;
+            transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        }
+
+        
+        .sidenav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+        .sidenav ul li{
+            border-bottom: 2px solid white;
+            color: white;
+            text-transform: uppercase;
+           
+        }
+        .sidenav span{
+            margin-left: 5px;
+        }
+        .sidenav a{
+            display: block;
+            font-size: 20px;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+        .sidenav a:hover{
+            border-left: 5px solid white;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            background-color:black;
+        } 
+        .show,.hide{
+            font-size: 40px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            line-height: 70px;
+        }
+        #check{
+            position: absolute;
+            visibility: hidden;
+            z-index: -100;
+        }
+        .hide{
+            opacity: 0;
+        }
+        #check:checked ~ .sidenav
+            {
+                left: 0;
+            }
+            #check:checked ~ .show
+            {
+                opacity: 0;
+            }
+            #check:checked ~ .hide
+            {
+                opacity: 1;
+            }
+            #check:checked ~ .image
+            {
+                float: right;
+                width: 80%;
+            }
+
+            .social{
+             display: flex;
+             margin-top: 80px;
+             border-top: 2px solid white;
+             border-bottom: 2px solid white;
+             justify-content: space-evenly;
+             
+            }
+            .social i{
+                font-size: xx-large;
+            }
+
+            @media  (max-width: 800px)
+        {
+            .header
+        {
+            width: 100%;
+            height: 70px;
+            background-color:  #2f3640;
+            position: fixed;
+            top: 0;            
+            display: flex;
+            justify-content: center;
+        }
+        
+        
+            .sidenav
+        {
+            width: 100%;
+            height: 100vh;
+            background-color:#353b48 ;
+            position: fixed;
+            top: 0;
+            margin-top: 70px;
+            left: -100%;
+            
+            
+        }
+       .sidenav ul
+        {
+            list-style: none;
+            
+        }
+        .sidenav ul li
+        {            
+            border-bottom: 2px solid rgba(255,255,255,.1);
+        }
+       .sidenav ul li a 
+        {
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 20px;
+        }        
+       
+        .show, .hide
+        {
+            position: fixed;
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            transition: .4s;
+            top: 0px;
+            left: 20px;            
+        }
+        .hide
+        {
+            opacity: 0;
+        }
+        #check
+        {
+            position: absolute;
+            visibility: hidden;  
+             z-index: -100;
+        }
+        
+            #check:checked ~ .side-bar
+            {
+                left: 0;
+            }
+            #check:checked ~ .show-btn
+            {
+                opacity: 0;
+            }
+            #check:checked ~ .hide-btn
+            {
+                opacity: 1;
+            }
+            #check:checked ~ .image
+            {
+                width: 80%;
+            }
+            
+        .social{
+            
+            display: block;
+            margin-top: 0px;
+           
+
+        }
+        @media  (max-width: 250px) {
+            .header h2{
+                display: none;
+            }
+           
+        }
+        
+       
+
+     
+    </style>
+</head>
+<body>
+    <div class="header">
+       
+        <img src="./images/fslogo.jpg" alt="">
+         <h2>FULL STACK</h2>
+
+        </div>
+
+        <input type="checkbox" id="check">
+            <label for="check" class="show">
+            <i class="fa fa-bars" ></i>  
+            </label>
+          <label for="check" class="hide">
+                <i class="fa fa-times"></i>
+            </label>
+        <div class="sidenav">
+   
+         <ul>
+            <li><a href="#"><i class="fa fa-home"><span>Home</span></i></a></li>
+            <li><a href="#"><i class="fa fa-bars"><span>Team</span></i></a></li>
+            <li><a href="#"><i class="fa fa-code-fork"><span>Project</span></i></a></li>
+            <li><a href="#"><i class="fa fa-user-circle"><span>About Us</span></i></a></li>
+            <li><a href="#"><i class="fa fa-phone-square"><span>Contact Us</span></i></a></li>
+           
+        </ul> 
+        <div class="social">
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ " target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        </div>
+</div>
+
+    </div>
+    <div class="image">
+        <img src="./images/office2.jpg" alt="">
+        <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus magni in itaque, nostrum quisquam eum est aspernatur, corrupti autem recusandae at ad molestias? Fuga atque eveniet animi obcaecati repellat quia adipisci rerum aliquam! Quis ab blanditiis unde laboriosam asperiores cum quasi est. Iure natus animi voluptas aliquam itaque enim minus voluptatibus molestiae sapiente ducimus, sint recusandae aut non ipsa tempore consequuntur eligendi blanditiis molestias culpa, ab tenetur fugit numquam voluptates quam. Id deserunt, mollitia dolores pariatur odio, amet veritatis sapiente quas velit voluptas ab quae assumenda? Sit natus reprehenderit alias impedit deleniti laboriosam voluptates debitis dolore. Numquam hic, quam ipsa aut possimus itaque? Possimus ratione, aperiam deleniti doloribus, facere sapiente voluptatum officia tempore quas labore laborum quia. Dignissimos officia deleniti enim, reiciendis repellendus, repudiandae voluptatem eum, earum doloribus ut cupiditate perferendis libero necessitatibus distinctio ullam! Totam aspernatur, aperiam iusto rerum unde laboriosam enim. Assumenda numquam, laboriosam beatae, itaque adipisci in corporis error deleniti eos dolor debitis reiciendis eligendi. Incidunt minima commodi non debitis adipisci vero delectus ratione harum perferendis dolor neque alias dolore aut libero, distinctio esse sequi exercitationem repellat sit. Quas rem dolores facilis fugiat iusto, corrupti pariatur inventore itaque magni? Est aliquam ratione corrupti eligendi illum rerum maxime quibusdam obcaecati fuga aperiam facere perferendis amet, tenetur nisi ad enim sunt id cupiditate vero cumque. Esse incidunt necessitatibus ratione libero officiis suscipit similique laborum tempora reprehenderit error quod, laudantium sapiente ex quis odit eos hic quam fuga id assumenda beatae reiciendis non ea. Aspernatur quod dolorem modi nulla sunt saepe aliquam dicta excepturi facilis consectetur, laudantium ipsa eius repellat voluptatem quos libero. Delectus, veniam enim! Cupiditate mollitia dignissimos culpa, nobis quisquam totam corrupti eos nesciunt nihil asperiores voluptatibus cumque, enim ut aliquid quod veritatis inventore vitae commodi autem consectetur consequuntur hic quibusdam facilis fuga? Ipsam, voluptates. Fugit, eum dolor explicabo sunt laboriosam voluptatem facilis ad. Dignissimos nemo nihil aperiam blanditiis labore, ipsum praesentium eum natus quos eveniet culpa quis numquam reiciendis earum, modi ut, architecto hic pariatur fuga aspernatur. Suscipit sequi consequuntur modi esse culpa cupiditate consequatur fuga atque animi sit sed iusto, illum aliquam? Dolor temporibus aliquid dolore tenetur architecto cumque omnis reiciendis fuga recusandae atque quam doloremque optio enim labore, eos et minima blanditiis quibusdam quas sed illum beatae illo ipsa. Ullam est magni, adipisci voluptates aliquid cupiditate, itaque ipsum praesentium magnam laboriosam asperiores pariatur, fugiat dolorem omnis sed. Incidunt itaque animi similique vero culpa enim molestias?
+   </p>
+
+
+ </div>
+</body>
+</html>

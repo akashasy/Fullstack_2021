@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical8</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box{
+            width: 100%;
+           
+            padding: 10px;
+
+        }
+        .menu{
+            background-color: grey;
+            width: 100%;
+            height: 80px;
+            display: block;
+          text-align: center;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .nav {
+           
+            list-style: none;
+            text-transform: uppercase;
+            
+        }
+        .nav  li
+        {
+            display: inline;
+          line-height: 70px;
+            font-size: 30px;
+            padding: 0 30px;
+           
+        }
+       .nav  li a{
+            text-decoration: none;
+        }
+        main{
+            width: 100%;
+        }
+        section.image{
+            width: 100%;
+            height: 80vh;
+            /* background-color: hotpink; */
+            margin-top: 10px;
+
+
+        }
+        section.image img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+        section.team{
+            /* display: flex; */
+            justify-content: space-evenly;
+            /* align-items: center; */
+            margin-top: 15px;
+           
+        }
+        section.team h2{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+           
+            margin-top: 20px;
+            
+        }
+
+         .circle {
+             width: 250px;
+             height: 250px;
+             margin-top: 30px;
+            display: inline-flex;
+             /* background-color: yellow; */
+             border-radius: 50%;
+             margin-left: 70px; 
+            
+            }
+            .circle img{
+                border-radius: 50%;
+            }
+            section.project{
+                width: 100%;
+                margin-top: 15px;
+                height: 650px;
+               
+             
+               
+                
+                
+            }
+            section.project article{
+                float: left;
+                width: 50%;
+                height: 600px;
+                background-color: crimson;
+            }
+            section.project h2{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            section.project p{
+                text-align: justify;
+                padding: 5px;
+               
+            }
+            aside{
+                float: right;
+                width: 48%;
+                height: 600px;
+                
+                display: flex;
+                flex-direction: column;
+            }
+            aside .block img{
+                height: 100%;
+                width: 100%;
+            }
+            section.project aside .block{
+                height: 31%;
+                width: 100%;
+                background-color: darkblue;
+                margin-bottom: 2%;
+            }
+            section.project aside #lastblock{
+                margin-bottom: 0;
+                height: 200px;
+            }
+            section.techno{
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+               height: 90vh;
+            
+                
+               
+            }
+            section.techno h2{
+                margin-top: 10px;
+                
+                text-align: center;
+                text-transform: uppercase;   
+            }
+        
+               section.techno .square{
+                width: 20%;
+                height: 80vh;
+                display: inline-block;
+                /* background-color: chartreuse; */
+                padding: 5px;
+                margin: 30px;
+            
+                border-radius: 5px;
+                box-shadow: 0 5px 5px black;
+            }
+            section.techno .square img{
+                height: 28%;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        section.techno .square h4{
+           font-size: 15px;
+           text-transform: uppercase;
+           
+           font-family: Arial, Helvetica, sans-serif;
+           text-align: center;
+           margin-bottom: 5px;
+        }
+        section.techno .square p{
+            
+            text-align: justify;
+            height: 60%;
+            
+            overflow: hidden;
+        }
+        section.techno .square a{
+            text-align: center;
+            background-color: blue;
+            display: block;
+            font-size: 20px;
+            color: white;
+            margin-top: 2%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+        }
+        section.techno .square a:hover{
+            background-color: red;
+        }
+            footer{
+                
+                width: 100%;
+                background-color: palevioletred;
+                height: 130px;
+            }
+            footer pre{
+                 text-align: center; 
+                justify-content: center; 
+                padding: 5px;
+                
+                text-transform: capitalize;
+                font-size: large;
+            }
+            .contact h1{
+                text-align: center;
+               margin-top: 40px;
+               margin-bottom: 5px;
+                
+            }       
+            .show,.hide,#check{
+                font-size: 40px;
+                color: white;
+               line-height: 70px;
+               margin-right: 50px;
+               float: right;
+            }
+           .show,.hide{
+               display: none;
+           }
+            #check{
+                visibility: hidden;
+                z-index: -10;
+                position: absolute;
+                
+               
+            }
+            .show:hover,.hide:hover{
+               color: gold;
+            }
+            
+            @media  (min-width: 600px) and (max-width: 1200px)
+        {
+
+            .show,.hide{
+                display: block;
+                
+            }
+            .menu{
+                background-color: gray;
+                width: 100%;
+                height: 80px;
+                padding: 0;
+            }
+            .nav{
+                position: fixed;
+                top: 0px;
+                right:-100%;
+                width: 100%;
+                height: 100vh;
+                text-transform: uppercase;
+                background-color: #2A2B2DFF;
+                text-align: center;
+                line-height: normal;
+                padding-top: 40px;  
+             }
+            .nav li{
+                display: block;
+                color: #D9514EFF;
+                padding-top: 30px; 
+            }
+            .nav li a{
+                display: block;
+               padding: 0;
+            }
+            .nav li a:hover{
+                color: red;
+                background-color: #2DA8D8FF;
+            }
+            #check:checked ~.nav{
+                right: 0;
+            }
+            .hide{
+                position: absolute;
+                right: 30px;
+                top: 15px;
+            }
+            section.image{
+                height: 80%;
+                width: 100%;
+            
+            }
+            section.team{
+                height: 90%;
+                width: 80%;
+                 margin-left: 10%;
+                margin-right: 20%; 
+                
+            }
+            
+                section.team h2{
+                    margin-right: 30%;
+                    margin-left: 30%;
+                    margin-bottom: 0%;
+                    margin-top: 0%;
+                    text-align: center;
+                }
+                section.project{
+                    height: 100vh;
+                    width: 100%;
+                }
+                article{
+                    width: 50%;
+                    overflow: hidden;
+                    height: 100%;
+                    padding: 5px;
+                }
+                aside{
+                    width: 48%;
+                    height: 100%;
+                }
+                aside .block {
+                    width: 45%;
+                    height: 100%;
+                }
+                section.techno{
+                    margin-top: 10%;
+                  
+                    width: 95%;
+                    height: 100%;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                section.techno h2{
+                    margin-left: 30%;
+                    margin-right: 30%;
+                }
+                section.techno .square{
+                
+                    padding: 2%;
+                    width: 35%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                   
+                   
+                }
+               
+                .contact{
+                    width: 100%;
+                    height: 90%;
+                   
+                }
+            
+            }
+            @media  (min-width: 200px) and (max-width: 599px){
+
+
+                
+            .show,.hide{
+                display: block;
+                
+            }
+            .menu{
+                background-color: gray;
+                width: 100%;
+                height: 80px;
+                padding: 0;
+            }
+            .nav{
+                position: fixed;
+                top: 0px;
+                right:-100%;
+                width: 100%;
+                height: 100vh;
+                text-transform: uppercase;
+                background-color: #2A2B2DFF;
+                text-align: center;
+                line-height: normal;
+                padding-top: 40px;  
+             }
+            .nav li{
+                display: block;
+                color: #D9514EFF;
+                padding-top: 30px; 
+            }
+            .nav li a{
+                display: block;
+               padding: 0;
+            }
+            .nav li a:hover{
+                color: red;
+                background-color: #2DA8D8FF;
+            }
+            #check:checked ~.nav{
+                right: 0;
+            }
+            .hide{
+                position: absolute;
+                right: 30px;
+                top: 15px;
+            }
+            section.image{
+                height: 80%;
+                width: 100%;
+            
+            }
+            section.team{
+                height: 90%;
+                width: 80%;
+                 margin-left: 10%;
+                margin-right: 20%; 
+                
+            }
+            
+                section.team h2{
+                    margin-right: 30%;
+                    margin-left: 30%;
+                    margin-bottom: 0%;
+                    margin-top: 0%;
+                    text-align: center;
+                }
+                section.project{
+                    height: 100vh;
+                    width: 100%;
+                }
+                article{
+                    width: 50%;
+                    overflow: hidden;
+                    height: 100%;
+                    padding: 5px;
+                }
+                aside{
+                    width: 48%;
+                    height: 100%;
+                }
+                aside .block {
+                    width: 45%;
+                    height: 100%;
+                }
+                section.techno{
+                    margin-top: 10%;
+                  
+                    width: 95%;
+                    height: 100%;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+                section.techno h2{
+                    margin-left: 30%;
+                    margin-right: 30%;
+                }
+                section.techno .square{
+                
+                    padding: 2%;
+                    width: 35%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                   
+                   
+                }
+               
+                .contact{
+                    width: 100%;
+                    height: 90%;
+                   
+                }
+            
+
+            }
+            
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a name="top"></a>
+ 
+       <div class="menu">
+       <input type="checkbox" id="check">
+       <label for="check" class="show">
+           <i class="fa fa-bars"></i>
+
+       </label>
+           <ul class="nav">
+               <li><a href="#top">home</a></li>
+               <li><a href="#team">team</a></li>
+               <li><a href="#project">project</a></li>
+               <li><a href="#techno">about</a></li>
+               <li><a href="#contact">contact</a></li>
+               <label for="check" class="hide">
+                   <i class="fa fa-times"></i>
+               </label>
+           </ul>
+        </div>
+    
+   <main>
+       <section class="image">
+           <a name="image"></a>
+           <img src="./images/office-workspace.jpg" alt="">
+
+       </section>
+       <section class="team">
+           <a name="team"></a>
+           <h2>TEAM MEMBERS</h2>
+           <div class="circlefull">
+           <div class="circle">
+               <img src="./images/character1.png" alt="">
+           </div>
+           <div class="circle">
+               <img src="./images/character2.png" alt="">
+           </div>
+           <div class="circle">
+               <img src="./images/character4.png" alt="">
+           </div>
+           <div class="circle">
+               <img src="./images/charcter3.png" alt="">
+           </div>
+        </div>
+       </section>
+       <section class="project">
+           <a name="project"></a>
+           <h2>Project</h2>
+           <article>
+               <h2>About Project</h2>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime eum minus, culpa deserunt repellendus nulla, expedita consectetur, ducimus error numquam autem harum nihil dicta aperiam quibusdam excepturi officia? Cupiditate aut dicta cum iste perferendis quidem odio, tempora, suscipit quasi laborum repellendus a repellat, beatae vero nisi itaque voluptate numquam dignissimos! Voluptate dolores laudantium sint, repellat perferendis corporis eos. Aliquid, laboriosam dolorum ducimus porro quidem fugiat, deleniti vero excepturi rem dolor voluptatibus ipsa architecto voluptatum veritatis id officiis autem soluta, sunt amet ea earum adipisci totam quibusdam omnis. Omnis, amet sed repellat totam aut nesciunt debitis, deleniti vel esse harum officia numquam cum? Ab neque, fugit pariatur aspernatur perferendis animi minus doloribus officia nobis saepe odit, tempore nihil recusandae corporis sapiente! Molestiae, facere expedita soluta commodi rerum mollitia laboriosam deserunt quam optio dolore adipisci sit odit quasi. Cumque optio odio nemo aliquid numquam officiis corrupti accusamus molestias dolores atque magnam earum ullam mollitia, rerum quidem distinctio, fugiat tenetur iste vitae maxime a consectetur ipsam? At deleniti, autem nostrum eaque corrupti voluptate? Porro eaque vel dolor maiores similique veniam! Voluptates vero similique, voluptate iure cum voluptatem, velit iste repellat eligendi quos aperiam quidem officiis sapiente animi commodi facilis voluptas atque. Est, mollitia id saepe voluptatem exercitationem explicabo consequatur reiciendis quibusdam, natus voluptatum enim odit quod fuga non dolorum aliquid voluptates sequi neque architecto culpa repudiandae earum! Eaque explicabo, nemo officia, quibusdam laboriosam illum maxime exercitationem natus, iste magni nam nobis repudiandae quaerat quos. Tempora, commodi et optio expedita ipsam magnam iste amet consequuntur ipsum animi est cum culpa quis minus quisquam. Deserunt, sit nisi velit modi magnam cum, iusto rerum pariatur dolorem amet id explicabo? Perspiciatis rem corrupti dignissimos incidunt reiciendis et amet? Distinctio ipsum voluptas vitae iste voluptatum porro modi, quibusdam ullam aliquid deserunt reprehenderit odit laborum ratione qui culpa velit.</p>
+           </article>
+           <aside>
+               <div class="block">
+                   <img src="./images/project5.jpg" alt="">
+               </div>
+               <div class="block">
+                   <img src="./images/project3.png" alt="">
+               </div>
+               <div class="block" id="lastblock">
+                   <img src="./images/project4.jpg" alt="">
+               </div>
+           </aside>
+       </section>
+       <section class="techno">
+       <a name="techno"></a>
+       <h2>Technologies Used</h2>
+           <div class="square">
+               <img src="./images/htmlsmall.png" alt="">
+               <h4>Introduction to html</h4>
+               <p> HTML was originally developed by Tim Berners-Lee in 1990. He is also known as the father of the web. In 1996, the World Wide Web Consortium (W3C) became the authority to maintain the HTML specifications. HTML also became an international standard (ISO) in 2000.Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+                <a href="">Read More</a>  
+            </div>
+           <div class="square">
+               <img src="./images/csssmall2.png" alt="">
+               <h4>Introduction to css</h4>
+               <p> CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website. Cascading Style Sheets (CSS) is a markup language responsible for how your web pages will look like. It controls the colors, fonts, and layouts of your website elements.CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics. </p>
+                <a href="">Read More</a>
+           
+            </div>
+           <div class="square">
+               <img src="./images/JavascriptSmall.png" alt="">
+               <h4>Introduction to js</h4>
+               <p> JavaScript is a client-side scripting language of web developed by Netscape in 1995 with the name LiveScript. JavaScript is used to build interactive websites with dynamic features and to validate form data. JavaScript is high-level, dynamic and browser interpreted programming language.</p>
+               <a href="">Read More</a>
+              </div>
+           <div class="square">
+               <img src="./images/react.png" alt="">
+               <h4>Introduction to React</h4>
+               <p>ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library which is responsible only for the view layer of the application. It was initially developed and maintained by Facebook .</p>
+
+               <a href="">Read More</a>
+           </div>
+        
+       </section>
+   </main>
+   <div class="contact">
+       <h1>Contact Us</h1>
+   <footer>
+        
+    <a name="contact"></a>
+    <pre>
+
+    All Copyright Reversed &copy; 2021
+     Mobile No:- 9936****47
+     Email id:- abc@gmail.com
+<a href="#top">Back To Top</a>
+    </pre>
+   </footer>
+</div>
+   </div>
+</body>
+</html>

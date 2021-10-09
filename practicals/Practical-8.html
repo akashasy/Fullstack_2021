@@ -1,0 +1,873 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header{
+            height: 100px;
+            background-color:gray;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white; 
+
+            
+            
+        }
+        .image
+        {
+            /* border: 2px solid black; */
+            /* width: 100%; */
+            height: 500px;
+            background-color: skyblue;
+             /* border-radius: 6px; */
+            /* margin: 1px 1px 4px; */
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 40px;
+            color: white; 
+            
+
+
+
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: darkblue;
+            
+            margin-bottom: 10px;
+            margin-top: 40px; 
+            text-transform: uppercase;
+        }
+        .team
+        {
+          
+            height: 350px;
+            
+            width: 95%;
+          margin-top: 10px;  
+
+
+
+        }
+        .content
+        {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 500px;
+            
+            /* border-radius: 6px; */
+            /* justify-content: center;
+            align-items: center;
+            display: inline;
+            font-size: 20px; */
+            
+            
+        }
+        .techno
+        {
+            
+            /* border: 2px solid orange; */
+            width: 100%; 
+            height: 350px;
+            /* border-radius: 4px; */
+            /* margin: 1px 1px 2px 2px; */
+            /* text-align:center;
+            
+            font-size:20px;
+            align-items: center; */
+            margin-bottom: 10px;
+            
+        }
+        .footer
+        {
+           
+             width: 100%; 
+            height: 120px;
+            background-color: brown;
+             border-radius: 8px;
+            
+            margin-top: 10px; 
+            display: flex;
+            
+           justify-content: center;
+           align-items: center;
+            
+            font-size: 20px;
+            color:white;
+         
+
+            
+            
+        }
+        
+        .circle
+        {
+        height: 250px;
+        width: 250px;
+        
+        border-radius: 50%;
+        float: left;
+       
+        
+        margin-left: 50px;
+
+        
+      }
+      .circle img{
+        height: 250px;
+        width: 250px;
+        
+        border-radius: 50%;
+        float: left;
+        margin-top: 30px;
+        
+        margin-left: 50px;
+
+      }
+      .left
+      {
+          float: left;
+          height: 450px;
+          width: 50%;
+          background-color: grey;
+          padding: 5px;
+          
+ 
+          color: white;
+         
+      }
+      .left h3{
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 10px;
+          
+      }
+      .right
+      {
+          height: 450px;
+          width: 48%;
+          
+         
+         float:right;
+         justify-content: center;
+         align-items: center;
+         font-size: 30px;
+         color: white;
+      }
+      .block{
+          
+          height: 150px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+          
+          
+         
+          
+      }
+      .block img{
+          
+          
+          height:100%;
+          width: 100%;
+          
+      }
+      .content .right .block{
+          width: 100%;
+          height: 133px;
+
+      }
+      .box
+      {
+          width: 20%;
+          height: 300px;
+          background-color: white;
+          float: left;
+          margin-left: 60px;
+          margin-top: 20px;
+          overflow: hidden;
+      }
+      .box1 p{
+          
+          overflow: hidden;
+      }
+       .box1
+    {
+       height: 100%;
+        width: 98%;
+        float: left;
+        overflow: hidden;
+        /* margin: 15px 10px; */
+    
+        padding: 10px;
+        border-radius: 8px;
+         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); 
+        /* padding: 10px;
+        height: 40%;
+        width: 90%; */
+
+    }
+    .box .box1 img{
+        height: 25%;
+        width: 100%;
+    }
+    .box .box1 p{
+        height: 55%;
+        width: 100;
+    }
+     .box .box1 a{
+       height: 5%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        background-color:blue;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+        
+    }
+     .box1 img{
+        
+        width: 100%;
+        background-repeat: no-repeat;
+        background: no-repeat;
+    } 
+    
+    .box1 a:hover{
+       
+        background-color: crimson;
+
+    }
+    #text p{
+        text-align: justify;
+    }
+    
+      
+       .drop ul
+      {
+          
+          display: inline-flex;
+          list-style: none;
+          text-transform: uppercase; 
+          
+      }
+      .drop li  a{
+          text-decoration: none;
+          padding: 15px;
+          display: block;
+        }
+        .drop ul li{
+            padding: 15px;
+            margin: 15px;
+          display: block;
+          line-height: 60px;
+         
+        }
+        .drop ul li a:hover{
+            display: block;
+            color:black;
+            background-color: white;
+
+        }
+    .drop ul li a:hover,.active
+    {
+       
+        color: black;
+        background-color:white;
+    }
+    
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+<div class="biggbox"><a name="top"></a>
+<div class="header"> 
+    <!-- Header -->
+    
+    <div class="drop">
+        <ul>
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="#team">team</a></li>
+            <li><a href="#techno">technology</a></li>
+            <li><a href="#content">Project</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+</div>
+<div class="image"> 
+    <!-- Banner
+         -->
+    <img src="./images/office-workspace.jpg" alt="" height="500" width="100%">
+</div>
+<div class="team">
+    <a name="team"></a>
+    <h1 >Team Members</h1>
+    <div class="circle">
+        <img src="./images/character1.png" alt="">
+    </div>
+    <div class="circle">
+
+        <img src="./images/character2.png" alt="">
+    </div>
+    <div class="circle">
+        <img src="./images/charcter3.png" alt="">
+
+
+    </div>
+    <div class="circle">
+        <img src="./images/character4.png" alt="">
+    </div>
+</div>
+<div class="content">
+    <a name="content" ></a>
+    <h1>Project</h1>
+    <div class="left">
+        <h3>About Project</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deserunt. Accusamus minus facere similique! Sequi perferendis dolorem quo eveniet mollitia recusandae fuga voluptates hic voluptate debitis itaque porro consequuntur inventore eligendi architecto earum molestiae minus at obcaecati, dolores tempora unde labore iure rem! Eligendi, repellendus eaque sequi earum recusandae ipsa culpa aliquid, exercitationem distinctio perferendis qui temporibus ab, officiis assumenda fugit quam. Voluptatum, minima quam! Rem sed deleniti pariatur impedit enim, mollitia delectus iusto voluptatum, dolorum error esse optio dolorem, laborum adipisci! Laboriosam eos nulla adipisci distinctio. Ipsum illo numquam est, et dolor placeat voluptatibus error esse deserunt incidunt vel fuga suscipit eum reiciendis exercitationem maxime officiis dolorem. Facere dolor adipisci saepe quisquam consectetur. Quaerat quidem eaque quod veniam labore enim, excepturi vel odit! Nostrum ratione perspiciatis tempore et quasi doloribus, voluptatum fugiat debitis ipsa aspernatur, facilis voluptatibus? Ex possimus illo minima quas assumenda, nisi maxime? Ex tempora dolorem incidunt, architecto iure harum accusamus et pariatur molestias vitae ipsa in, aliquid enim quos suscipit. Dolore eius vero, fugit earum, sapiente dolorum hic illum non voluptate doloremque et voluptatum quisquam distinctio? Cum commodi odit quidem? Nulla, ratione sed neque sit animi voluptas earum possimus, natus sapiente, voluptatum a rerum eaque illum.</p>
+    </div>
+    <div class="right">
+        <div class="block">
+            <img src="images/project2.jpg" alt="" >
+        </div>
+        <div class="block">
+            <img src="images/project4.jpg" alt="" >
+        </div>
+        <div class="block">
+            <img src="images/project3.png" alt="" >
+        </div>
+    </div>
+</div>
+<div class="techno">
+    <a name="techno" ></a>
+    <h1>Technologies Used</h1>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/htmlsmall.png" alt="" >
+           
+            <h4>Introduction to HTML</h4>
+            <p>
+              HTML was originally developed by Tim Berners-Lee in 1990. He is also known as the father of the web. In 1996, the World Wide Web Consortium (W3C) became the authority to maintain the HTML specifications. HTML also became an international standard (ISO) in 2000.
+            </p>
+      
+            <a href="./html.html">Read More</a>
+        
+          
+    </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/csssmall3.jpg" alt="">
+           
+            <h4>Introduction To CSS</h4>
+            <p>
+                CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website. Cascading Style Sheets (CSS) is a markup language responsible for how your web pages will look like. It controls the colors, fonts, and layouts of your website elements.
+
+            </p>
+            <a href="./css.html">Read More</a>
+
+        </div>
+
+
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/JavascriptSmall.png" alt="">
+            <h4>Introduction To JS</h4>
+            <p>
+                JavaScript is a client-side scripting language of web developed by Netscape in 1995 with the name LiveScript. JavaScript is used to build interactive websites with dynamic features and to validate form data. JavaScript is high-level, dynamic and browser interpreted programming language.
+
+            </p>
+            <a href="./js.html">Read More</a>
+        
+
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/react.png" alt="">
+           <h4>Introduction To React</h4>
+
+            <p>
+                ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library which is responsible only for the view layer of the application. It was initially developed and maintained by Facebook .
+            </p>
+            <a href="./react.htm">Read More</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .header{
+            height: 100px;
+            background-color:gray;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white; 
+
+            
+            
+        }
+        .image
+        {
+            /* border: 2px solid black; */
+            /* width: 100%; */
+            height: 500px;
+            background-color: skyblue;
+             /* border-radius: 6px; */
+            /* margin: 1px 1px 4px; */
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 40px;
+            color: white; 
+            
+
+
+
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: darkblue;
+            
+            margin-bottom: 10px;
+            margin-top: 40px; 
+            text-transform: uppercase;
+        }
+        .team
+        {
+          
+            height: 350px;
+            
+            width: 95%;
+          margin-top: 10px;  
+
+
+
+        }
+        .content
+        {
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 500px;
+            
+            /* border-radius: 6px; */
+            /* justify-content: center;
+            align-items: center;
+            display: inline;
+            font-size: 20px; */
+            
+            
+        }
+        .techno
+        {
+            
+            /* border: 2px solid orange; */
+            width: 100%; 
+            height: 350px;
+            /* border-radius: 4px; */
+            /* margin: 1px 1px 2px 2px; */
+            /* text-align:center;
+            
+            font-size:20px;
+            align-items: center; */
+            margin-bottom: 10px;
+            
+        }
+        .footer
+        {
+           
+             width: 100%; 
+            height: 120px;
+            background-color: brown;
+             border-radius: 8px;
+            
+            margin-top: 10px; 
+            display: flex;
+            
+           justify-content: center;
+           align-items: center;
+            
+            font-size: 20px;
+            color:white;
+         
+
+            
+            
+        }
+        
+        .circle
+        {
+        height: 250px;
+        width: 250px;
+        
+        border-radius: 50%;
+        float: left;
+       
+        
+        margin-left: 50px;
+
+        
+      }
+      .circle img{
+        height: 250px;
+        width: 250px;
+        
+        border-radius: 50%;
+        float: left;
+        margin-top: 30px;
+        
+        margin-left: 50px;
+
+      }
+      .left
+      {
+          float: left;
+          height: 450px;
+          width: 50%;
+          background-color: grey;
+          padding: 5px;
+          
+ 
+          color: white;
+         
+      }
+      .left h3{
+          font-size: 30px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 10px;
+          
+      }
+      .right
+      {
+          height: 450px;
+          width: 48%;
+          
+         
+         float:right;
+         justify-content: center;
+         align-items: center;
+         font-size: 30px;
+         color: white;
+      }
+      .block{
+          
+          height: 150px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+          
+          
+         
+          
+      }
+      .block img{
+          
+          
+          height:100%;
+          width: 100%;
+          
+      }
+      .content .right .block{
+          width: 100%;
+          height: 133px;
+
+      }
+      .box
+      {
+          width: 20%;
+          height: 300px;
+          background-color: white;
+          float: left;
+          margin-left: 60px;
+          margin-top: 20px;
+          overflow: hidden;
+      }
+      .box1 p{
+          
+          overflow: hidden;
+      }
+       .box1
+    {
+       height: 100%;
+        width: 98%;
+        float: left;
+        overflow: hidden;
+        /* margin: 15px 10px; */
+    
+        padding: 10px;
+        border-radius: 8px;
+         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15); 
+        /* padding: 10px;
+        height: 40%;
+        width: 90%; */
+
+    }
+    .box .box1 img{
+        height: 25%;
+        width: 100%;
+    }
+    .box .box1 p{
+        height: 55%;
+        width: 100;
+    }
+     .box .box1 a{
+       height: 5%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        background-color:blue;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+        
+    }
+     .box1 img{
+        
+        width: 100%;
+        background-repeat: no-repeat;
+        background: no-repeat;
+    } 
+    
+    .box1 a:hover{
+       
+        background-color: crimson;
+
+    }
+    #text p{
+        text-align: justify;
+    }
+    
+      
+       .drop ul
+      {
+          
+          display: inline-flex;
+          list-style: none;
+          text-transform: uppercase; 
+          
+      }
+      .drop li  a{
+          text-decoration: none;
+          padding: 15px;
+          display: block;
+        }
+        .drop ul li{
+            padding: 15px;
+            margin: 15px;
+          display: block;
+          line-height: 60px;
+         
+        }
+        .drop ul li a:hover{
+            display: block;
+            color:black;
+            background-color: white;
+
+        }
+    .drop ul li a:hover,.active
+    {
+       
+        color: black;
+        background-color:white;
+    }
+    
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+<div class="biggbox"><a name="top"></a>
+<div class="header"> 
+    <!-- Header -->
+    
+    <div class="drop">
+        <ul>
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="#team">team</a></li>
+            <li><a href="#techno">technology</a></li>
+            <li><a href="#content">Project</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+</div>
+<div class="image"> 
+    <!-- Banner
+         -->
+    <img src="./images/office-workspace.jpg" alt="" height="500" width="100%">
+</div>
+<div class="team">
+    <a name="team"></a>
+    <h1 >Team Members</h1>
+    <div class="circle">
+        <img src="./images/character1.png" alt="">
+    </div>
+    <div class="circle">
+
+        <img src="./images/character2.png" alt="">
+    </div>
+    <div class="circle">
+        <img src="./images/charcter3.png" alt="">
+
+
+    </div>
+    <div class="circle">
+        <img src="./images/character4.png" alt="">
+    </div>
+</div>
+<div class="content">
+    <a name="content" ></a>
+    <h1>Project</h1>
+    <div class="left">
+        <h3>About Project</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, deserunt. Accusamus minus facere similique! Sequi perferendis dolorem quo eveniet mollitia recusandae fuga voluptates hic voluptate debitis itaque porro consequuntur inventore eligendi architecto earum molestiae minus at obcaecati, dolores tempora unde labore iure rem! Eligendi, repellendus eaque sequi earum recusandae ipsa culpa aliquid, exercitationem distinctio perferendis qui temporibus ab, officiis assumenda fugit quam. Voluptatum, minima quam! Rem sed deleniti pariatur impedit enim, mollitia delectus iusto voluptatum, dolorum error esse optio dolorem, laborum adipisci! Laboriosam eos nulla adipisci distinctio. Ipsum illo numquam est, et dolor placeat voluptatibus error esse deserunt incidunt vel fuga suscipit eum reiciendis exercitationem maxime officiis dolorem. Facere dolor adipisci saepe quisquam consectetur. Quaerat quidem eaque quod veniam labore enim, excepturi vel odit! Nostrum ratione perspiciatis tempore et quasi doloribus, voluptatum fugiat debitis ipsa aspernatur, facilis voluptatibus? Ex possimus illo minima quas assumenda, nisi maxime? Ex tempora dolorem incidunt, architecto iure harum accusamus et pariatur molestias vitae ipsa in, aliquid enim quos suscipit. Dolore eius vero, fugit earum, sapiente dolorum hic illum non voluptate doloremque et voluptatum quisquam distinctio? Cum commodi odit quidem? Nulla, ratione sed neque sit animi voluptas earum possimus, natus sapiente, voluptatum a rerum eaque illum.</p>
+    </div>
+    <div class="right">
+        <div class="block">
+            <img src="images/project2.jpg" alt="" >
+        </div>
+        <div class="block">
+            <img src="images/project4.jpg" alt="" >
+        </div>
+        <div class="block">
+            <img src="images/project3.png" alt="" >
+        </div>
+    </div>
+</div>
+<div class="techno">
+    <a name="techno" ></a>
+    <h1>Technologies Used</h1>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/htmlsmall.png" alt="" >
+           
+            <h4>Introduction to HTML</h4>
+            <p>
+              HTML was originally developed by Tim Berners-Lee in 1990. He is also known as the father of the web. In 1996, the World Wide Web Consortium (W3C) became the authority to maintain the HTML specifications. HTML also became an international standard (ISO) in 2000.
+            </p>
+      
+            <a href="./html.html">Read More</a>
+        
+          
+    </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/csssmall3.jpg" alt="">
+           
+            <h4>Introduction To CSS</h4>
+            <p>
+                CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and feel of a website. Cascading Style Sheets (CSS) is a markup language responsible for how your web pages will look like. It controls the colors, fonts, and layouts of your website elements.
+
+            </p>
+            <a href="./css.html">Read More</a>
+
+        </div>
+
+
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/JavascriptSmall.png" alt="">
+            <h4>Introduction To JS</h4>
+            <p>
+                JavaScript is a client-side scripting language of web developed by Netscape in 1995 with the name LiveScript. JavaScript is used to build interactive websites with dynamic features and to validate form data. JavaScript is high-level, dynamic and browser interpreted programming language.
+
+            </p>
+            <a href="./js.html">Read More</a>
+        
+
+        </div>
+    </div>
+    <div class="box">
+        <div class="box1">
+            <img src="./images/react.png" alt="">
+           <h4>Introduction To React</h4>
+
+            <p>
+                ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library which is responsible only for the view layer of the application. It was initially developed and maintained by Facebook .
+            </p>
+            <a href="./react.htm">Read More</a>
+        </div>
+    </div>
+
+</div>
+<h1 >Contact Us</h1>
+<div class="footer"> 
+    
+    <a name="contact"></a>
+    <pre>
+
+    All Copyright Reversed &copy; 2021. 
+     Mobile No:- 9936****47
+     Email id:- abc@gmail.com
+            <a href="#top">Back To Top</a>
+    </pre>
+</div>
+</div>
+
+</body>
+</html>
+        </div>
+    </div>
+
+</div>
+<h1 >Contact Us</h1>
+<div class="footer"> 
+    
+    <a name="contact"></a>
+    <pre>
+
+    All Copyright Reversed &copy; 2021. 
+     Mobile No:- 9936****47
+     Email id:- abc@gmail.com
+            <a href="#top">Back To Top</a>
+    </pre>
+</div>
+</div>
+
+</body>
+</html>

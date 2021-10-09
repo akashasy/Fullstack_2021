@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Map</title>
+</head>
+<style>
+    div{
+        float: left;
+        font-size: large;
+        font-weight: bold;
+        border: solid black;
+        background-color:orchid;
+        display: block;
+        padding: 15px;
+        
+    }
+    img{
+        padding: 20px;
+        height: 200px;
+        width: 200px;
+        background-color:white;
+        
+    }
+    .image
+    {
+       
+    background-color:orange;
+    padding: 5px;
+    margin-left: 30px;
+    margin-right: 25px;
+    
+
+    }
+    .box
+    {
+       margin-left: 200px;
+       margin-right: 100px;
+       margin-bottom: 20px;
+       margin-top: 20px;
+       border: none;
+       padding: 0px;
+    }
+</style>
+<body>
+    <div class="box">
+        <div><a href="./practical1.html" >Practical1</a></div>
+        <div><a href="./practical2.html">Practical2</a></div>
+    <div><a href="./practical3.html">Practical3</a></div>
+   <div> <a href="./practical4.html">Practical4</a></div>
+    <div><a href="./practical5.html">Practical5</a></div>
+    </div>
+    <div class="image">
+    <a href="./html.html"><img src="./images/HTMLLOGO2.png" alt="HTML" height="230px" width="200px"></a>
+    <a href="./css.html"><img src="./images/css5.png" alt="CSS" height="230px" width="200px"></a>
+    <a href="./js.html"> <img src="./images/JAVASCRIPT.jpg" alt="JAVASCRIPT" height="230px" width="200px"></a>
+    <img src="./images/react.png" alt="REACT" usemap="#react" height="205px" width="200px" style="background-color: white;">
+    <map name="react" id="react">
+        <area shape="rect" coords="8 5 290 160" href="./react.htm" alt="REACT">
+    </map>
+    </div>
+
+</body>
+</html>

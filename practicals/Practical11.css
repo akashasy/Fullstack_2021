@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+  
+
+    margin-bottom: 10px;
+    margin-top: 5px;
+    
+    
+}
+
+h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    color:gray
+}
+footer{
+    background-color: #26272b;
+}
+section.section1{
+    display: flex;
+    
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+}
+section.section1 .about{
+    width: 40%;
+ 
+    padding: 10px;
+
+}
+section.section1 h2{
+    color: rgb(250, 250, 250);
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.about p{
+    text-align: justify;
+    padding: 5px;
+    color: lightgray;
+
+}
+section.section1 .categories, .quick,.contact{
+    
+    padding: 5px;
+}
+section.section1 li{
+    list-style: none;
+    padding: 10px;
+
+
+}
+section.section1 li a{
+    text-decoration: none;
+    color: lightgray;
+    
+}
+section.section1 li a:hover{
+    color: yellow;
+}
+.contact li{
+    color: lightgray;
+}
+.contact i{
+    display: inline;
+    margin-right: 7px;
+    color:lightgray;
+}
+section.section2{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    
+}
+section.section2 a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    
+    
+}
+section.section2 a:hover{
+    background-color: orange;
+}
+section.section2 h2{
+    font-size: 25px;
+    margin-right:10px;
+    color: lightgray;
+    margin-top: 4px;
+}
+section.section3 {
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+    font-size: 30px;
+}
+section.section3 a{
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    
+    background-color:gray;
+}
+section.section3 a i{
+    color: white;
+ 
+   
+}
+section.section3 #facebook:hover {
+    background-color: #3b5999;
+
+}
+section.section3 #twitter:hover {
+    background-color:  #55acee; 
+
+}
+section.section3 #google:hover {
+
+    background-color: #dd4b39;
+}
+section.section3 #gmail:hover {
+    background-color:#0077b5 ;
+}
+section.section4{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 80px;
+    
+}
+section.section4 a{
+    margin-left: 5px;
+}
+
+@media (max-width:800px)
+{
+    main{
+    
+        margin: 10px;
+        
+        
+    }
+    
+    h1{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+        color:gray
+    }
+    footer{
+        background-color: #26272b;
+    }
+    section.section1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    section.section1 .about{
+        width: 100%;
+       
+        padding: 10px;
+    
+    }
+    section.section1 h2{
+        color: rgb(250, 250, 250);
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .about p{
+        text-align: justify;
+        padding: 5px;
+        color: lightgray;
+    
+    }
+    section.section1 .categories, .quick,.contact{
+        
+        
+        padding: 5px;
+    }
+    section.section1 li{
+        list-style: none;
+        padding: 10px;
+    
+    
+    }
+    section.section1 li a{
+        text-decoration: none;
+        color: lightgray;
+        
+    }
+    section.section1 li a:hover{
+        color: yellow;
+    }
+    .contact li{
+        color: lightgray;
+    }
+    .contact i{
+        display: inline;
+        margin-right: 7px;
+        color:lightgray;
+    }
+    section.section2{
+        display: flex;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        
+    }
+    section.section2 a{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        color: white;
+        background-color: red;
+        border-radius: 15px;
+        
+        
+    }
+    section.section2 a:hover{
+        background-color: orange;
+    }
+    section.section2 h2{
+        font-size: 25px;
+        margin-right:10px;
+        color: lightgray;
+        margin-top: 4px;
+    }
+    section.section3 {
+      text-align: center;
+      padding: 10px;
+      margin: 5px;
+        font-size: 30px;
+    }
+    section.section3 a{
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        
+        background-color:gray;
+    }
+    section.section3 a i{
+        color: white;
+     
+       
+    }
+    section.section3 #facebook:hover {
+        background-color: #3b5999;
+    
+    }
+    section.section3 #twitter:hover {
+        background-color:  #55acee; 
+    
+    }
+    section.section3 #google:hover {
+    
+        background-color: #dd4b39;
+    }
+    section.section3 #gmail:hover {
+        background-color:#0077b5 ;
+    }
+    section.section4{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        
+    }
+    section.section4 a{
+        margin-left: 5px;
+    }
+}
+
+
+@media (max-width:550px)
+{
+    main{
+    
+        margin: 10px;
+        
+        
+    }
+    
+    h1{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+        color:gray
+    }
+    footer{
+        background-color: #26272b;
+    }
+    section.section1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    section.section1 .about{
+        width: 100%;
+       
+        padding: 10px;
+    
+    }
+    section.section1 h2{
+        color: rgb(250, 250, 250);
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .about p{
+        text-align: justify;
+        padding: 5px;
+        color: lightgray;
+    
+    }
+    section.section1 .categories, .quick,.contact{
+       
+        
+        padding: 5px;
+    }
+    section.section1 li{
+        list-style: none;
+        padding: 10px;
+    
+    
+    }
+    section.section1 li a{
+        text-decoration: none;
+        color: lightgray;
+        
+    }
+    section.section1 li a:hover{
+        color: yellow;
+    }
+    .contact li{
+        color: lightgray;
+    }
+    .contact i{
+        display: inline;
+        margin-right: 7px;
+        color:lightgray;
+    }
+    section.section2{
+        display: flex;
+        text-align: center;
+        padding: 10px;
+        justify-content: center;
+        
+        
+        
+    }
+    section.section2 a{
+        display: inline-block;
+        text-decoration: none;
+        text-transform:capitalize;
+        padding: 5px 5px;
+        color: white;
+        background-color: red;
+        border-radius: 15px;
+        
+        
+    }
+    section.section2 a:hover{
+        background-color: orange;
+    }
+    section.section2 h2{
+        font-size: 15px;
+        margin-right:5px;
+        color: lightgray;
+        margin-top: 4px;
+        
+    }
+    section.section3 {
+      text-align: center;
+      padding: 10px;
+      margin: 5px;
+        font-size: 17px;
+    }
+    section.section3 a{
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        padding: 7px;
+        
+        background-color:gray;
+    }
+    section.section3 a i{
+        color: white;
+     
+       
+    }
+    section.section3 #facebook:hover {
+        background-color: #3b5999;
+    
+    }
+    section.section3 #twitter:hover {
+        background-color:  #55acee; 
+    
+    }
+    section.section3 #google:hover {
+    
+        background-color: #dd4b39;
+    }
+    section.section3 #gmail:hover {
+        background-color:#0077b5 ;
+    }
+    section.section4{
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        
+    }
+    section.section4 a{
+        margin-left: 5px;
+    }
+}
