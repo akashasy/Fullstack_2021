@@ -4,310 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body{
-            background-color: rgb(180, 177, 177);
-            
-        }
-        .box{
-            display: flex;
-            justify-content: center;
-            
-           
-            
-        }
-        .header{
-            font-size: 40px;
-            text-transform: uppercase;
-            text-align: center;
-            
-            margin: 30px;
-            color: red;
-        }
-        .Login,.signUp,.signIn{
-            width: 300px;
-            height: 400px;
-            display:inline-block;
-            background-color: white;
-           margin-left: 30px;
-           
-           
-            
-        }
-       .upper{
-           text-align: center;
-           font-size: 18px;
-           padding: 5px;
-           background-color: chocolate;
-           height: 25%;
-           margin-bottom: 10px;
-          
-       }
-       .upper h2{
-           margin-top: 10px;
-           color: white;
-       }
-       
-       input[type="email"]
-       {
-           outline: none;
-           border: none;
-           border-bottom: 1px solid black;
-           padding: 10px;
-           font-size: 15px;
-           width: 90%;
-           margin: 10px;
-
-       }
-       input[type="password"]
-       {
-           outline: none;
-           border: none;
-           border-bottom: 1px solid black;
-           font-size: 15px;
-           padding: 10px;
-           width: 90%;
-           margin: 10px;
-       }
-       .Login #p1{
-           font-size: 15px;
-           text-align: right;
-           margin-right: 20px;
-       }
-       input[type="submit"]
-       {
-           outline: none;
-           border: none;
-           border-radius: 20px;
-           background-color: grey;
-           color: honeydew;
-           font-size: 15px;
-           padding: 5px 20px ;
-           text-transform: uppercase;
-           margin-top: 50px;
-           margin-left: 15px;
-          
-       }
-       .Login #p2{
-           display: inline-block;
-           font-size: 13px;
-           margin-left: 10px;
-       }
-       
-
-     
-       .top{
-           font-size: large;
-           text-align: center;
-           margin-top: 15px;
-           color: coral;
-           text-transform: uppercase;
-
-       }
-       input[type="checkbox"]
-       {
-           float: left;
-           margin-top: 10px;
-           margin-left: 10px;
-       }
-       #p3{
-           font-size: 11px;
-           margin-top: 10px;
-           float: left;
-           margin-left: 4px;
-       }
-       .signUp input[type="submit"]
-       {
-           
-        outline: none;
-           border: none;
-           border-radius: 15px;
-           background-color:blue;
-           color: honeydew;
-           font-size: 15px;
-           padding: 6px 15px ;
-          
-          
-           text-transform: uppercase;
-       
-           
-
-
-
-       }
-       .sign{
-          
-           
-           
-          margin-top: 60px;
-          margin-bottom: 15px;
-          
-       }
-       .signUp #p4{
-           display: inline-block;
-           font-size: 13px;
-           margin-left: 15px;
-         
-       }
-       .footer2{
-           background-color: brown;
-           
-           height: 84px;
-           
-          justify-content: center;
-          align-items: center;
-           display: flex;
-           
-          
-       }
-       .social{
-           font-size: 30px;
-           
-           color: white;
-       }
-       .social i{
-           padding: 10px;
-       }
-       header{
-           font-size: 15px;
-           text-transform: uppercase;
-           text-align: center;
-           margin-top: 10px;
-           color: steelblue;
-       }
-       #p5{
-           font-size: 13px;
-           margin-right: 20px;
-           text-align: end;
-           color: blueviolet;
-       }
-       .signIn input[type="submit"]
-       {
-           background-color: rgb(17, 147, 199);
-         border-radius: 20px;
-         display: block;
-         width: 90%;
-         padding: 12px 15px;
-         margin: 20px 15px;
-         
-        
-       }
-       .signIn p{
-           text-align: center;
-           font-size: 15px;
-           
-               }
-               .footer3{
-                   display: flex;
-                   justify-content: center;
-                   margin-top: 20px;
-               }
-
-               .social1 i{
-                   font-size: 30px;
-                   border-radius: 30px;
-                   padding: 10px 0px;
-                   text-align: center;
-                   width: 75px;
-                   color: rgb(96, 96, 248);
-                   
-                   box-shadow: 2px 2px 5px skyblue;
-               }
-
-
-    
-
-    </style>
+    <title>Price Table </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+       justify-content: center;
+        text-align: center;
+        align-items: center;
+       height: 100vh;
+       width: 100%;
+        
+    }
+    table{
+        border-collapse: collapse; 
+        border-spacing: 0;     
+    }
+   
+    tr,td{
+       border-right:  2px solid white;
+       padding: 7px 30px;
+        font-size: 20px;
+    }
+    .foot{
+        height: 10vh;
+        width: 70px;
+    }
+   .foot a{
+       
+      border-radius: 10px;
+       padding: 10px 35px;
+       background-color: blue;
+       color: white;
+       text-decoration: none;
+
+   }
+   .foot a:hover{
+    background-color: red; 
+   }
+   #tick{
+       color: green;
+      
+   }
+   #wrong{
+      
+       color: red;
+   }
+   h2{
+       display: inline;
+       padding-left: 5px;
+       font-size: 30px;
+       color: rgb(106, 22, 185);
+   }
+   tr:nth-child(2) i{
+       font-size: 30px;
+       padding: 20px;
+   }
+  span {
+       color: green;
+       background: none;
+   }
+   td:nth-child(1){
+      background-color:rgb(199, 255, 143);
+   }
+   td:nth-child(2){
+       background-color: rgb(170, 223, 170);
+   }
+   td:nth-child(3){
+      background-color: lightskyblue;
+   }
+   td:nth-child(4){
+       background-color: rgb(193, 203, 218);
+   }
+  tr:nth-child(odd) td{
+      background-color:lightgoldenrodyellow;
+  }
+  
+</style>
 <body>
-    <div class="header"> <h1> Form Template</h1></div>
-    <div class="box">
-    <div class="Login">
-        <div class="upper"><h2>LOGIN</h2>
-            <div class="social">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google"></i>
-              </div>
-        
-        </div>
-        <div>
-        <input type="email"
-        name="email"
-        id="email"
-        placeholder="Enter Your Email"
-        >
-    </div>
-    <div>
-        <input type="password"
-        name="pass"
-        id="pass"
-        placeholder="Enter Your Password">
-
-        </div>
-        <p id="p1"> <b> Forgot Password?</b></p>
-        <input type="submit" value="Login">
-       <p id="p2">Don't have account? <b> Sign Up</b></p>
-
-    </div>
-    <div class="signUp">
-        <div class="top">
-            <h2>SignUP</h2>
-            </div>
-            <div>
-                <input type="email"
-                name="email"
-                id="email"
-                placeholder="Enter Email">
-            </div>
-            <div>
-                <input type="password"
-                name="pass"
-                id="pass"
-                placeholder="Enter Password">
-            </div>
-        
-            <input type="checkbox"><p id="p3">Check to accept Terms and Conditions </p>
-            <div class="sign"><input type="submit" value="SINGUP" >
-            <p id="p4">Have an account? <b> Sign In</b></p></div>
-            <div class="footer2">
-                <div class="social">
-                  <i class="fa fa-facebook"></i>
-                  <i class="fa fa-twitter"></i>
-                  <i class="fa fa-google"></i>
-                </div>
-           </div> 
-           </div>
-
-        <div class="signIn">
-            <header><h1>Sign In</h1></header>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email">
-            </div>
-            <div>
-                <input type="password" name="pass" id="pass" placeholder=" Enter Your Password">
-            </div>
-            <p id="p5">Forgot Password?</p>
-            <input type="submit" value="Sign In">
-           
-               <p> <b> Or sign in with</b></p>
-               <div class="footer3">
-                <div class="social1">
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                   <a href=""> <i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-google"></i></a>
-                  </div>
-               </div>
-        </div> 
+    <table>
+        <tr>
+            <td colspan="4">
+                <h3>SELECT YOUR PLAN </h3>
+            </td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-calculator"><h2>Basic</h2></i></td>
+            <td><i class="fa fa-book"><h2>Plus</h2></i></td>
+            <td><i class="fa fa-telegram"><h2>Deluxe</h2></i></td>
+            <td><i class="fa fa-bandcamp"><h2>Pro</h2></i></td>
+            
+        </tr>
+        <tr>
+            <td> <span>Rs. 500/-</span></td>
+            <td><span> Rs. 1500/-</span></td>
+            <td><span> Rs. 2500/-</span></td>
+            <td> <span>Rs. 3500/-</span> </td>
+        </tr>
+        <tr>
+            <td>50 pages</td>
+            <td>75 pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>3 users</td>
+            <td>5 users</td>
+            <td>10 users</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>10 Sites</td>
+            <td>25 Sites</td>
+            <td>100 Sites</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>50 MB</td>
+            <td>250 MB</td>
+            <td>1 GB</td>
+            <td>5 GB</td>
+        </tr>
+        <tr>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-check-circle" id="tick"></i></td>
+            <td><i class="fa fa-check-circle" id="tick" ></i></td>
+            <td><i class="fa fa-check-circle" id="tick" ></i></td>
+            <td><i class="fa fa-check-circle" id="tick" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times-circle" id="wrong"></i></td>
+            <td><i class="fa fa-check-circle" id="tick" ></i></td>
+            <td><i class="fa fa-check-circle" id="tick" ></i></td>
+            <td><i class="fa fa-check-circle" id="wrong" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times-circle" id="wrong" ></i></td>
+            <td><i class="fa fa-check-circle" id="tick"></i></td>
+            <td><i class="fa fa-check-circle" id="tick"></i></td>
+            <td><i class="fa fa-check-circle" id="tick" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times-circle" id="wrong" ></i></td>
+            <td><i class="fa fa-times-circle" id="wrong" ></i></td>
+            <td><i class="fa fa-check-circle" id="tick"></i></td>
+            <td><i class="fa fa-check-circle" id="tick" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times-circle" id="wrong" ></i></td>
+            <td><i class="fa fa-times-circle" id="wrong"></i></td>
+            <td><i class="fa fa-times-circle" id="wrong"></i></td>
+            <td><i class="fa fa-check-circle" id="tick"></i></td>
+        </tr>
+      
     
-</div>
+          <tr class="foot">
+              <td> <a href="#"> Sign Up</a></td>
+              <td> <a href="#">Sign Up</a> </td>
+              <td><a href="#">Sign Up</a> </td>
+              <td> <a href="#"> Sign Up</a></td>
+          </tr>
+     
+    </table>
 </body>
 </html>
