@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./New folder/jquery-3.6.0.js"></script>
+    <!-- <script>
+        $(document).ready(function(){
+            $("h1").html("intro to JQuery");
+        });//es5
+       // $(document).ready(()=>{});//es6
+    </script> -->
+</head>
+<body>
+    <h1 >intro to html</h1>
+</body>
+<script>
+    $(function(){
+        $("h1").bind("click",function(){
+            $("h1").css("background-color","red");
+        });
+    //     $("h1").html("intro to jquey");
+    //     $("h1").css("color","red");
+     });
+</script>
+</html>
