@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: purple;
+    }
+
+    h1{
+        height: 100px;
+        
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 40px;
+        
+    }
+   
+    main{
+        margin: 10px 30px;
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+    }
+    form{
+        background-color: lightgoldenrodyellow;
+       padding: 10px 20px;
+       border-radius: 10px;
+    
+       box-shadow: 0px 4px 5px;
+    }
+    main label{
+        color:rgba(34, 33, 33, 0.966);
+    }
+    main input{
+        width: 400px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 15px;
+        padding: 10px;
+        border: 2px solid white;
+        
+       
+    }
+    div{
+        margin-top: 25px;
+    }
+    input[type="submit"],button{
+        background-color: blue;
+        color: white;
+        
+        width: 100%;
+        padding: 5px 10px;
+       font-size: 20px;
+       border:  2px solid blue;
+       border-radius: 10px;
+       
+    }
+    .forms span{
+        position: absolute;
+        margin-top: 45px;
+        
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        left: 490px;
+        /* display: none; */
+      
+    }
+  
+    .forms.success input{
+        border-color: green;
+       
+    }
+    .forms.success .fa {
+        color: green; 
+    }
+    .forms.success #hide{
+        display: none;
+    }
+    .forms.error .fa{
+        color: red;
+    }
+    .forms.error #check{
+        display: none;
+    }
+    .forms.success span{
+        display: none;
+    }
+    .forms.error span{
+        color: red;
+    }
+    .forms.error input{
+        border-color: red;
+    }
+    .forms .fa{
+        position: absolute;
+       right: 515px;
+       margin-top: 10px;
+       /* visibility: hidden; */
+    }
+    
+   
+</style>
+<body>
+    <!-- <h1>Creat Account</h1> -->
+    <main>
+    <form  id="form" method="post">
+        <h1>Create account</h1>
+        <div id="username" class="forms success">
+        <label for="name" >Username</label><br>
+        <input type="text" placeholder="Enter your name" name="username" >
+        <i class="fa fa-check-circle" id="check"></i>
+        <i class="fa fa-times" id="hide"></i>
+        <span>error</span>
+    </div>
+        
+        <div id="email" class="forms error">
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="Enter  your email(abc@gmail.com)" name="email"  >
+        <i class="fa fa-check-circle" id="check"></i>
+        <i class="fa fa-times" id="hide"></i>
+        <span>Email-ID cannot be blank</span>
+        
+    </div>
+
+        <div id="passwrd" class="forms error">
+        <label for="password" >Password</label><br>
+        <input type="password" placeholder="Enter password" name="password">
+        <i class="fa fa-check-circle" id="check"></i>
+        <i class="fa fa-times" id="hide"></i>
+        <span>Password cannot be blank</span>
+    </div>
+
+        <div id="pass2" class="forms error">
+        <label for="pass">Confirm Password </label><br>
+        <input type="password" placeholder="Re-enter your password" name="pass">
+        <i class="fa fa-check-circle" id="check"></i>
+        <i class="fa fa-times" id="hide"></i>
+        <span>Password cannot be blank</span>
+    </div>
+
+    <div>
+        <!-- <input type="submit" value="Submit"> -->
+        <button id="submit" >Submit</button>
+    </div>
+    </form>
+    <script src="./practical15.js"></script>
+   <!-- <script src="./practical15.js"></script> -->
+</main>
+</body>
+</html>

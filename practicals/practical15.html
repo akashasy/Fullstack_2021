@@ -5,70 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-15</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="practical15.css">
 </head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    h1{
-        height: 100px;
-        background-color: blanchedalmond;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: 40px;
-    }
-    main{
-        margin: 10px 30px;
-        display: flex;
-        font-size: 25px;
-        justify-content: center;
-
-    }
-    main label{
-        color:rgba(34, 33, 33, 0.966);
-    }
-    main input{
-        width: 400px;
-        height: 40px;
-        margin-top: 5px;
-        font-size: 15px;
-        padding: 10px;
-       
-    }
-    div{
-        margin-top: 30px;
-    }
-    input[type="submit"]{
-        background-color: navy;
-        color: white;
-    }
-
-</style>
 <body>
-    <h1>Creat Account</h1>
-    <main>
-    <form action="" method="post">
-        <div id="uname">
-        <label for="name" >Username</label><br>
-        <input type="text" placeholder="Enter your name" name="username" required ></div>
-        <div id="email">
-        <label for="email">Email</label><br>
-        <input type="email" placeholder="Enter  your email(abc@gmail.com)" name="email" required ></div>
-        <div id="passwrd">
-        <label for="password">Password</label><br>
-        <input type="password" placeholder="Enter password" name="password" required ></div>
-        <div id="pass2">
-        <label for="pass">Password Again</label><br>
-        <input type="password" placeholder="Re-enter your password" name="pass" required >
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form" action="google.com" method="post">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="akash7" id="username" />
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="abc@gmail.com" id="email" />
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Confirm Password </label>
+                <input type="password" placeholder=" Re-enter Password " id="password2"/>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
     </div>
-    <div>
-        <input type="submit" value="Submit" >
-    </div>
-    </form>
-</main>
+<script src="./practical15.js"></script>
+   
 </body>
 </html>
